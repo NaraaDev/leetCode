@@ -11,13 +11,9 @@ public:
             if (nums[right] > mid)
                 return true;
             else if (nums[right] < mid && nums[right] > left)
-            {
                 mid = nums[right];
-            }
             else if (nums[right] < left)
-            {
                 left = nums[right];
-            }
         }
 
         return false;
